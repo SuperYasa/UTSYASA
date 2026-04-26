@@ -1,0 +1,177 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Web Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#skills">Skill</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="profile-image">
+                    <img src="{% static 'images/profile.jpeg' %}" alt="Profile">
+                </div>
+                <h1>Halo, Saya Yasa Ahmad Aflah Syabil</h1>
+                <p class="subtitle">UIN Salatiga | Sains Data 4A</p>
+                <p class="description">Saya seorang developer web yang masih belajar dari Pak Agung.</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">Lihat Project</a>
+                    <a href="#contact" class="btn btn-secondary">Hubungi Saya</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Tentang Saya</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Saya adalah seorang web developer dengan minim pengalaman dalam mengembangkan aplikasi web menggunakan teknologi modern. Saya memiliki passion dalam belajar dan mengikuti perkembangan teknologi terkini.</p>
+                    <p>Saya telah menyelesaikan berbagai miniproject menarik dan terus belajar untuk meningkatkan skill saya dalam full-stack development.</p>
+                </div>
+                <div class="about-info">
+                    <div class="info-item">
+                        <span class="label">Lokasi:</span>
+                        <span class="value">Indonesia</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Email:</span>
+                        <span class="value">yasaahmadaflahsyabil@gmail.com</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Pengalaman:</span>
+                        <span class="value">2+ Bulan</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Skill & Teknologi</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Frontend</h3>
+                    <p>HTML, CSS, JavaScript, React, Vue.js</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-server"></i>
+                    <h3>Backend</h3>
+                    <p>Python, Django, Node.js, Express.js</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Database</h3>
+                    <p>MySQL, PostgreSQL, MongoDB</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Tools</h3>
+                    <p>Git, VS Code, Docker, REST API</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Project Terbaru</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="{% static 'images/project_uts.png' %}" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>Project 1</h3>
+                        <p>ini adalah project pertama saya dalam membuat website.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Django</span>
+                        </div>
+                        <a href="#" class="view-btn">Lihat Detail</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Hubungi Saya</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>yasaahmadaflahsyabil@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telepon</h4>
+                            <p>+62 87763138458</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Lokasi</h4>
+                            <p>Indonesia</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Nama Anda" required>
+                    <input type="email" placeholder="Email Anda" required>
+                    <textarea placeholder="Pesan Anda" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2026 Portfolio Saya. Semua hak dilindungi.</p>
+        </div>
+    </footer>
+
+    <script src="{% static 'js/script.js' %}"></script>
+    <button id="scrollToTop" title="Scroll to top">↑</button>
+</body>
+</html>
