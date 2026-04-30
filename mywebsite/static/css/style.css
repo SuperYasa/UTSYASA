@@ -140,7 +140,7 @@ html {
 .hero {
     margin-top: 60px;
     padding: 120px 0 100px 0;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    background: linear-gradient(135deg, #637ce9 0%, #764ba2 50%, #f093fb 100%);
     color: var(--white);
     text-align: center;
     position: relative;
@@ -199,7 +199,7 @@ html {
 .profile-image img {
     width: 200px;
     height: 200px;
-    border-radius: 50%;
+    border-radius: 70%;
     border: 5px solid var(--white);
     object-fit: cover;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
